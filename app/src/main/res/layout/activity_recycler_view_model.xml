@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Model of each item present in recycler view-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    tools:context=".RecyclerViewModel">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Name: "
+        android:id="@+id/statenamelabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statenamevalue"
+        android:text="Sample_State"
+        android:layout_toRightOf="@+id/statenamelabel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:layout_toLeftOf="@+id/datevalue"
+        android:id="@+id/datelabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00-00-0000"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/datevalue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum Temperature: "
+        android:layout_below="@+id/statenamelabel"
+        android:layout_marginTop="7dp"
+        android:id="@+id/mintemplabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statenamelabel"
+        android:layout_toRightOf="@+id/mintemplabel"
+        android:text="00.00"
+        android:layout_marginTop="7dp"
+        android:id="@+id/mintempvalue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum Temperature: "
+        android:layout_below="@+id/statenamelabel"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/maxtempvalue"
+        android:id="@+id/maxtemplabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statenamelabel"
+        android:layout_alignParentEnd="true"
+        android:text="00.00"
+        android:layout_marginTop="7dp"
+        android:id="@+id/maxtempvalue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Temperature: "
+        android:layout_below="@+id/mintemplabel"
+        android:layout_marginTop="7dp"
+        android:id="@+id/thetemplabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mintemplabel"
+        android:text="00.00"
+        android:layout_toRightOf="@+id/thetemplabel"
+        android:layout_marginTop="7dp"
+        android:id="@+id/thetempvalue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed: "
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/windspeedvalue"
+        android:layout_below="@+id/mintemplabel"
+        android:id="@+id/windspeedlabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mintemplabel"
+        android:layout_marginTop="7dp"
+        android:text="00.00000000"
+        android:id="@+id/windspeedvalue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: "
+        android:layout_marginTop="7dp"
+        android:id="@+id/humiditylabel"
+        android:layout_below="@+id/thetemplabel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/humiditylabel"
+        android:layout_below="@+id/thetemplabel"
+        android:text="00"
+        android:layout_marginTop="7dp"
+        android:id="@+id/humidityvalue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/thetemplabel"
+        android:layout_toLeftOf="@+id/visibilityvalue"
+        android:layout_height="wrap_content"
+        android:text="Visibility: "
+        android:layout_marginTop="7dp"
+        android:id="@+id/visibilitylabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00"
+        android:layout_below="@+id/thetemplabel"
+        android:layout_marginTop="7dp"
+        android:id="@+id/visibilityvalue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/visibilityvalue"
+        android:id="@+id/seperatorline"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+
+
+
+
+</RelativeLayout>
